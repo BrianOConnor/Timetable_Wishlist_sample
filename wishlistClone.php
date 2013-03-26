@@ -81,6 +81,7 @@
 			"section" => $course->section, "title" => $course->title,
 			"room" => $course->room, "days" => $course->days, 
 			"start" => $course->start, "end" => $course->end, "space"=>($course->max_enr-$course->enr),
+			"start_date" => $course->start_date, "end_date" => $course->end_date,  
 			"link_con" => $course->link_con, "link_id"=>$course->link_id, "timeslots"=>$timeslotsArray, "labs"=>$labs, "searched"=>false
 		);
 		return $courseArray; //returns formatted course data
@@ -100,6 +101,7 @@
 			"dept" => $registered->dept, "course" => $registered->course, 
 			"section" => $registered->section, "title" => $registered->title,
 			"days" => $registered->days, "start" => $registered->start, "end" => $registered->end,
+			"start_date" => $registered->start_date, "end_date" => $registered->end_date,
 			"link_con" => $registered->link_con, "link_id"=>$registered->link_id, "timeslots"=>$timeslotsArray
 		);
 		return $registeredArray; //returns formatted course data for courses/labs the user is already registered in
@@ -138,6 +140,7 @@
 			"section" => $labCourses->section, "title" => $labCourses->title,
 			"room" => $labCourses->room, "days" => $labCourses->days, 
 			"start" => $labCourses->start, "end" => $labCourses->end, "space"=>($labCourses->max_enr-$labCourses->enr),
+			"start_date" => $labCourses->start_date, "end_date" => $labCourses->end_date, 
 			"link_con" => $labCourses->link_con, "link_id"=>$labCourses->link_id, "timeslots"=>$timeslotsArray,"searched"=>false);
 			$labs[]=$courseArray;
 		}
