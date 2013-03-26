@@ -1,0 +1,12 @@
+Attached are two files, WishlistClone.js and WishlistClone.php. These files contain the code 
+that I added/modified to Wishlist.js and Wishlist.php for the Timetable Whiz tool found at at.eng.carleton.ca/engsched (Timetable Whiz tab). 
+
+The two files included display the code behind the functionality that generates the timetables. The files included are shorter versions 
+of the code on Wishlist.js and Wishlist.php because they leave out the parts that involve generating the dropdown menus, which would make 
+both files considerably longer. 
+
+The Timetable Whiz tool had been built prior to my time working on it, but was not functioning properly. Thus I basically rewrote the timetable
+generation functionality from scratch, and modified numerous other parts of the code. 
+
+To begin, start with WishlistClone.js which contains the majority of the functionality. WishlistClone.php contains the server-side retreival of
+information from the database. 
